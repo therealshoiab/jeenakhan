@@ -120,12 +120,12 @@ export default function MotionReels() {
                 />
 
                 {/* Gradient Overlay */}
-                <div className={`absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent transition-opacity duration-300 ${
+                <div className={`absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent transition-opacity duration-300 pointer-events-none ${
                   isCurrentPlaying ? 'opacity-20 group-hover:opacity-40' : 'opacity-70'
                 }`} />
 
                 {/* Center Play/Pause Button */}
-                <div className={`absolute inset-0 flex items-center justify-center transition-transform duration-300 ${
+                <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 pointer-events-none ${
                   isCurrentPlaying ? 'opacity-0 group-hover:opacity-100' : 'opacity-100'
                 }`}>
                   <div className="w-16 h-16 rounded-full bg-black/70 backdrop-blur-md border border-white/30 flex items-center justify-center text-white group-hover:scale-110 group-hover:border-gold-400 group-hover:text-gold-400 transition-all shadow-2xl">
